@@ -1,0 +1,192 @@
+.bookWrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #101212fc;
+    overflow: hidden;
+}
+
+.bookSection {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.bookContent {
+    width: 30%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.greetings {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.bookImg {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.bookImg1 {
+    margin-left: 225px;
+    margin-top: 100px; 
+    width: 70%;
+    max-width: 350px;
+}
+
+.bookImg2 {
+    position: relative;
+    bottom: 175px;
+    right: 134px;
+    width: 60%;
+    max-width: 300px;
+}
+
+.bookVegImg {
+    position: absolute;
+    left: 19px;
+    top: 358px;
+    width: auto;
+    max-width: 100px;
+}
+
+.readBtn {
+    margin-right: 0;
+}
+.circular-text {
+    border-radius: 50%;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    height: 150px;
+    font-weight: bold;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+  }
+  
+  .circular-text span {
+    font-weight: 100;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 14px;
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+  }
+
+@media (max-width: 1200px) {
+    .bookImg1 {
+        margin-left: 150px;
+        width: 60%;
+    }
+    .bookImg2 {
+        bottom: 120px;
+        right: 90px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .bookSection {
+        flex-direction: column;
+    }
+    .bookContent {
+        width: 80%;
+    }
+    .bookImg {
+        width: 100%;
+    }
+    .bookImg1 {
+        margin-left: 0;
+        width: 50%;
+        margin-top: 130px;
+    }
+    .bookImg2 {
+        bottom: 139px;
+        right: 85px;
+        width: 45%;
+    }
+    .custom-class{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .bookVegImg{
+        display: none;
+    }
+    .bookContent {
+        width: 90%;
+    }
+    .bookImg1 {
+        width: 45%;
+        margin-top: 50px;
+    }
+    .bookImg2 {
+        bottom: 60px;
+        right: 30px;
+        width: 40%;
+    }
+    .bookVegImg {
+        top: 300px;
+        left: 10px;
+        max-width: 80px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .greetings {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .bookImg1 {
+        width: 40%;
+        margin-top: 100px;
+    }
+    .bookImg2 {
+        bottom: 71px;
+        right: 38px;
+        width: 35%;
+    }
+    .bookVegImg {
+        top: 300px;
+        left: 10px;
+        max-width: 70px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .bookSection{
+        padding: 20px 0;
+    }
+}
