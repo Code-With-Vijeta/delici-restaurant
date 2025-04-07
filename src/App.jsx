@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router,Routes,Route, useNavigate,} from "react-router-dom";
-import Offer from "./Offer";
+import Offer from "./offer";
 import Book from "./book";
 import Footer from "./footer";
 import BookingForm from "./BookingForm";
