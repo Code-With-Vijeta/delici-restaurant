@@ -7,7 +7,7 @@ import BookingForm from "./BookingForm";
 import FindTable from "./FindTable";
 import ReadMore from "./ReadMore";
 import Subscription from "./subscription";
-import DrinksMenu from "./DrinksMenu";
+import DrinksMenu from "./drinksMenu";
 import BreakfastMenu from "./breakfastMenu";
 import AppetizersMenu from "./appetizers";
 
