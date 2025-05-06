@@ -1,0 +1,139 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/menuBg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.2); 
+  z-index: -1;
+}
+
+
+.drinks-menu-container ,.breakfast-menu-container,.appetizers-menu-container{
+  background-color: rgba(0, 0, 0, 0.742);
+  text-align: center;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  border: 2px solid #333;
+}
+
+.menu-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #e7bf7a;
+  margin-bottom: 10px;
+}
+
+.menu-subtitle {
+  font-size: 18px;
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+.drinks-list,.breakfast-list,.appetizers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.drink-card,.breakfast-card,.appetizers-card {
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(255, 204, 0, 0.2);
+  width: 260px;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.drink-card::before,.breakfast-card::before,.appetizers-card::before{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.3);
+  transition: 0.5s;
+}
+
+.drink-card:hover::before ,.breakfast-card:hover::before,.appetizers-card:hover::before{
+  top: 0;
+  left: 0;
+}
+
+.drink-card:hover,.breakfast-card:hover,.appetizers-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.3);
+}
+
+.drink-image,.breakfast-image,.appetizers-image {
+  width: 100%;
+  border-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: brightness(0.8);
+}
+
+.drink-card:hover .drink-image,.breakfast-card:hover .breakfast-image,.appetizers-card:hover .appetizers-image{
+  transform: scale(1.08);
+}
+
+.drink-name ,.breakfast-name,.appetizers-name{
+  font-size: 22px;
+  color: #e7bf7a;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.drink-description,.breakfast-description,.appetizers-description {
+  font-size: 15px;
+  color: #ddd;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.drink-price ,.breakfast-price,.appetizers-price{
+  font-size: 18px;
+  color: #00ff99;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.back-home-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #e7bf7a;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.back-home-btn:hover {
+  background: #efbb60;
+  transform: translateY(-2px);
+}

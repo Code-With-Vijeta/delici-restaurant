@@ -1,0 +1,56 @@
+.find-table-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 12vh auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.598);
+    color: rgb(225, 216, 216);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid whitesmoke;
+  }
+  
+  .find-table-title {
+    font-size: 28px;
+    color: #d35400;
+    margin-bottom: 10px;
+  }
+  
+  .find-table-text {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  
+  .available-tables-title {
+    font-size: 22px;
+    color: #27ae60;
+    margin-top: 20px;
+  }
+  
+  .available-tables-list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .available-tables-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .back-home-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .back-home-btn:hover {
+    background: #c0392b;
+  }
+  

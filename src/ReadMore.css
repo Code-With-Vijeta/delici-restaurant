@@ -1,0 +1,60 @@
+.restaurant-details {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #060606cf;
+    color: rgba(255, 255, 255, 0.486);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid whitesmoke;
+  }
+  
+  .details-title {
+    font-size: 30px;
+    color: #d35400;
+    margin-bottom: 15px;
+  }
+  
+  .details-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .details-subtitle {
+    font-size: 24px;
+    color: #e67e22;
+    margin-top: 20px;
+  }
+  
+  .specialties-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .specialties-list li {
+    font-size: 18px;
+    background: #f8d7a4;
+    color: #382c2c;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .back-home-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .back-home-btn:hover {
+    background: #c0392b;
+  }
+  

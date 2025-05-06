@@ -1,0 +1,78 @@
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;  
+  }
+  
+  /* Carousel styling */
+  .carousel {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Each Slide */
+  .carousel-slide {
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s ease-in-out, transform 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+    visibility: visible; 
+    transform: translateX(0); 
+  }
+  
+  /* Image inside carousel */
+  .carousel-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Styling for buttons */
+  .carousel-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  
+  .carousel-btn.next {
+    right: 10px;
+  }
+  
+  .carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Add transition effects on hover for images */
+  .carousel-slide img {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img:hover {
+    transform: scale(1.05); 
+  }
+  
